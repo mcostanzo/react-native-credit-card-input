@@ -91,7 +91,7 @@ export default function connectToState(CreditCardInput) {
     };
 
     _focusNextField = field => {
-      if (['name', 'cvc'].includes(field)) return;
+      if (['name'].includes(field)) return;
       // Should not focus to the next field after name (e.g. when requiresName & requiresPostalCode are true
       // because we can't determine if the user has completed their name or not)
 
